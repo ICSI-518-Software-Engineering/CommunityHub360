@@ -1,0 +1,68 @@
+.navbar {
+  background-color: #000000; /* Pure black background */
+  color: #f0f0f0; /* Off-white (dark white) text color for better readability */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adding subtle shadow for depth */
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  color: #f0f0f0; /* Off-white (dark white) text */
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-item:hover {
+  color: #ffffff; /* Bright white on hover */
+  transform: translateY(-3px); /* Text rises up slightly on hover */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit; /* Inherits color from .navbar-item for a consistent look */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff; /* Bright white on hover for consistency with navbar-item */
+}
+
+.navbar-stable {
+  color: #f0f0f0; /* Off-white (dark white) stable navbar text */
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.btn-danger {
+  background-color: #e74c3c; /* Button color */
+  border: none;
+  padding: 8px 16px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b; /* Darker shade for hover state */
+  transform: translateY(-3px); /* Button rises up slightly on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+  .navbar-item {
+    margin: 0 10px;
+    font-size: 90%;
+  }
+}

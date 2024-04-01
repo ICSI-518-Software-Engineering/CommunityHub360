@@ -1,0 +1,146 @@
+/* Login Page Styles */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Use a linear-gradient for the background */
+  body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+  }
+  
+  /* Flexbox to center the login section */
+  .vh-100 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card styling */
+  .container {
+    background: white;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Enhance the title with text shadow */
+  .thead {
+    font-size: 2.5rem;
+    color: #333;
+    text-shadow: 1px 1px 2px #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styling */
+  .form-control {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    transition: border-color 0.3s;
+  }
+  
+  .form-control:focus {
+    border-color: #2193b0;
+    outline: none;
+  }
+  
+  /* Button styling with gradient */
+  .btn-primary {
+    background-image: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-image 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+  }
+  
+  /* Additional link styling */
+  .link-danger {
+    color: #dc3545;
+    transition: color 0.3s;
+  }
+  
+  .link-danger:hover {
+    color: #bd2130;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px 40px;
+    }
+  
+    .thead {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Utility classes for spacing and accessibility */
+  .mt-2 {
+    margin-top: 8px;
+  }
+  
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  
+  .btn-lg {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  /* Pseudo-elements for additional flair */
+  .btn-primary::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+  }
+  
+  .btn-primary:hover::after {
+    width: 100%;
+  }
+  .thead {
+    transition: color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.thead:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+.active-welcome {
+    color: #ff4500; /* Change the color onClick */
+}
+.welcome-message {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.welcome-message:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.welcome-message.active {
+    color: #2193b0; /* Change color when active */
+}

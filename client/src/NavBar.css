@@ -1,0 +1,64 @@
+.navbar {
+  background-color: #000; /* Dark black background */
+  color: #e0e0e0; /* Soft off-white text */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  position: relative;
+  color: #e0e0e0; /* Off-white (dark white) text */
+  margin: 0 20px;
+  cursor: pointer;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navbar-item:hover {
+  color: #fff; /* Bright white on hover */
+  text-shadow: 
+    0 0 10px #fff, 
+    0 0 20px #fff, 
+    0 0 30px #e60073, /* Neon pink glow */
+    0 0 40px #e60073, 
+    0 0 50px #e60073, 
+    0 0 60px #e60073,
+    0 0 70px #e60073;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit; /* Maintain the color from .navbar-item */
+  transition: color 0.3s;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+  transform: scale(1.05); /* Button grows slightly on hover */
+  box-shadow: 
+    0 0 10px #ff3333, 
+    0 0 20px #ff3333, 
+    0 0 30px #ff3333; /* Red glow for the button */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .navbar-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}

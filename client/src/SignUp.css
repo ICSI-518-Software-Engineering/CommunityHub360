@@ -1,0 +1,89 @@
+/* Base settings */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+  }
+  
+  /* Navbar styling */
+  .na-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  .thead {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  /* Form container */
+  .card {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Form title */
+  .card .fw-bold {
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Input styling */
+  .form-control {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-control:focus {
+    border-color: #a777e3;
+    outline: none;
+  }
+  
+  /* Button styling */
+  .btn-primary {
+    background-image: linear-gradient(to right, #6e8efb, #a777e3);
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .btn-primary:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Link styling */
+  .link-danger {
+    color: #6e8efb;
+    text-decoration: none;
+  }
+  
+  .link-danger:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .card {
+      margin-top: 20px;
+      width: 90%;
+    }
+  }
+  
