@@ -2,10 +2,15 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const mongoose = require('mongoose');
-const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
-// const mongoString="mongodb+srv://manandevani007:XNReRhFTw9izg21j@propadmn.vpitmnh.mongodb.net/"
+
+const username = encodeURIComponent("<username>");
+const password = encodeURIComponent("<password>");
+
+const { MongoClient, ServerApiVersion } = require('mongodb');
+// const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+const mongoString="mongodb+srv://snehabhavana:Sneha123abc@cluster0.s4ko2ia.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 app.use(express.json());
-const mongoString = "mongodb+srv://abdullearn18:abdullearn18@cluster0.rcrkkkv.mongodb.net/"
+
 
 mongoose.connect(mongoString)
 const database = mongoose.connection
